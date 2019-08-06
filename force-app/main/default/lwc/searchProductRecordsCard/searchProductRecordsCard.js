@@ -1,5 +1,5 @@
 import { LightningElement, track } from 'lwc';
-import findAccounts from '@salesforce/apex/ProductController.findAccounts';
+import findProducts from '@salesforce/apex/ProductController.findProducts';
 
 /** The delay used when debouncing event handlers before invoking Apex. */
 const DELAY = 350;
@@ -16,7 +16,7 @@ export default class SearchProductRecordsCard extends LightningElement {
     
     // eslint-disable-next-line @lwc/lwc/no-async-operation
     this.delayTimeout = setTimeout(() => {
-      findAccounts({ searchKey })
+      findProducts({ searchKey })
       .then(result => {
         this.accounts = result;
         this.error = undefined;

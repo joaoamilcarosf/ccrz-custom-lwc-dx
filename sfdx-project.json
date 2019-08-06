@@ -13,6 +13,8 @@
     "sourceApiVersion": "46.0",
     "packageAliases": {
         "B2BApp": "0Hof4000000KytkCAC",
-        "B2BApp@0.1.0-1": "04tf4000004C0SHAA0"
+        "B2BApp@0.1.0-1": "04tf4000004C0SHAA0",
+        "B2BApp@0.1.0-2": "04tf4000004C0SMAA0",
+        "B2BApp@0.1.0-3": "04tf4000004C0SRAA0"
     }
 }
