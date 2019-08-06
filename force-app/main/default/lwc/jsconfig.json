@@ -5,6 +5,12 @@
         "paths": {
             "c/helloWorld": [
                 "helloWorld/helloWorld.js"
+            ],
+            "c/productComponent": [
+                "productComponent/productComponent.js"
+            ],
+            "c/searchProductRecordsCard": [
+                "searchProductRecordsCard/searchProductRecordsCard.js"
             ]
         }
     },
