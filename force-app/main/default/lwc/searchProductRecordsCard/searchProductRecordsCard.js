@@ -5,7 +5,7 @@ import findProducts from '@salesforce/apex/ProductController.findProducts';
 const DELAY = 350;
 
 export default class SearchProductRecordsCard extends LightningElement {
-  @track accounts;
+  @track products;
   @track error;
   
   handleKeyChange(event) {
@@ -18,12 +18,12 @@ export default class SearchProductRecordsCard extends LightningElement {
     this.delayTimeout = setTimeout(() => {
       findProducts({ searchKey })
       .then(result => {
-        this.accounts = result;
+        this.products = result;
         this.error = undefined;
       })
       .catch(error => {
         this.error = error;
-        this.accounts = undefined;
+        this.products = undefined;
       });
     }, DELAY);
   }
